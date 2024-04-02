@@ -1,0 +1,38 @@
+
+
+<ng-container *ngIf="product$ | async as product">
+  
+  <div class="image-container">
+    <img *ngIf="product.code === 'HAWV9KR'" src="assets/H17-DD-01.png" alt="">
+    <img *ngIf="product.code === 'HAWV9KR'" src="assets/H17-DD-02.png" alt="">
+    <img *ngIf="product.code === 'HAWV9KR'" src="assets/H17-DD-03.png" alt="">
+  </div>
+  <div class="image-container">
+    <img *ngIf="product.code === 'HSGP15FB'" src="assets/H11-DD-01.png" alt="">
+    <img *ngIf="product.code === 'HSGP15FB'" src="assets/H11-DD-02.png" alt="">
+    <img *ngIf="product.code === 'HSGP15FB'" src="assets/H11-DD-03.png" alt="">
+  </div>
+
+  
+  <div class="image-container">
+    <img *ngIf="product.code === 'AX5100G'" src="assets/H06-DD-01.png" alt="">
+    <img *ngIf="product.code === 'AX5100G'" src="assets/H06-DD-02.png" alt="">
+    <img *ngIf="product.code === 'AX5100G'" src="assets/H06-DD-03.png" alt="">
+  </div>
+
+
+
+  <div class="video-container" *ngIf="product.code === '75UXAU'">
+    <img src="assets/H02-DD-01.png" alt="">
+    <img src="assets/H02-DD-02.png" alt="">
+    <img src="assets/H02-DD-03.png" alt="">
+
+    <video class="responsive-video" controls>
+      <source src="assets/H02-DD-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  
+
+
+</ng-container>

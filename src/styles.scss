@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'styles-config';
+@import '@spartacus/styles/index';
+
+
+body {
+    --cx-color-primary: #00AAA6;
+    --cx-color-dark: #00AAA6;
+
+
+}
+
+.header{
+    // height: 200px;
+}
+
+.anonymous-consent-banner{
+    height: 120px;
+}
+
+.anonymous-consent-banner container row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
