@@ -19,4 +19,6 @@ export class PdpImgComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

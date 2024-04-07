@@ -11,12 +11,39 @@ body {
 
 }
 
-.header{
-    // height: 200px;
+// cx-page-layout header {
+//     height: 70px;
+// }
+
+header {
+    // height: 10px;
+}
+
+cx-searchbox {
+
+}
+
+cx-footer-navigation cx-navigation-ui {
+        height: 160px;
+}
+
+
+.cx-notice{
+    height: 0px;
+    padding: 3px;
+}
+
+cx-footer-navigation cx-navigation-ui>nav>ul>li {
+    margin: 1vw;
+}
+
+
+.cx-footer-navigation{
+    height: 50px !important;
 }
 
 .anonymous-consent-banner{
-    height: 120px;
+    height: 80px;
 }
 
 .anonymous-consent-banner container row{
@@ -24,4 +51,21 @@ body {
     align-items: center;
     justify-content: center;
         
+}
+
+cx-anonymous-consent-management-banner .anonymous-consent-banner {
+    padding: 1rem 0;
+}
+
+cx-anonymous-consent-management-banner .cx-banner-buttons {
+    margin-top: 0rem;
+}
+
+cx-anonymous-consent-management-banner .cx-banner-description {
+    line-height: 1;
+}
+
+cx-anonymous-consent-management-banner .cx-banner-title {
+    line-height: 0.222222;
+    margin-bottom: 0.5rem;
 }

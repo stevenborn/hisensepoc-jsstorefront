@@ -6,11 +6,13 @@ import { StoreModule } from "@ngrx/store";
 import { AppRoutingModule } from "@spartacus/storefront";
 import { AppComponent } from './app.component';
 import { SpartacusModule } from './spartacus/spartacus.module';
-import { CustomPdpModule } from './custom-pdp/custom-pdp.module';
+
 import { provideOutLet } from "./layout/provideOutLet";
 import { CommonModule } from '@angular/common';
-import { provideConfig } from "@spartacus/core";
+import { ConfigModule, provideConfig } from "@spartacus/core";
 import { translationChunksConfig, translations } from "@spartacus/assets";
+import { CustomModule } from "./custom-module/custom-module";
+import { customerLayoutConfig } from "./layout/layout";
 
 @NgModule({
   declarations: [
@@ -23,17 +25,11 @@ import { translationChunksConfig, translations } from "@spartacus/assets";
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     SpartacusModule,
-    CustomPdpModule,
+    CustomModule,
     CommonModule
   ],
   providers: [
     provideOutLet,
-    provideConfig({
-    i18n: {
-      resources: translations,
-      chunks: translationChunksConfig,
-    },
-  }),
   ],
   bootstrap: [AppComponent]
 })

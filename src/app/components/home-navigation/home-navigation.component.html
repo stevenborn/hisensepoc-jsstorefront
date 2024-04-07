@@ -1,0 +1,19 @@
+
+<!-- <ul *ngFor="let navigationData$ of navigationNodeData$" class="navi-ui">
+  <li *ngIf="navigationData$ | async as node">
+    <app-home-navifation-node [node]="node"></app-home-navifation-node>
+  </li>
+</ul> -->
+
+<ul *ngFor="let navigationData$ of navigationNodeData$" class="navi-ui">
+  <ng-container *ngIf="navigationData$ | async | json as node">
+    <input [value]="node"/>
+    <!-- <li *ngFor="let cnode of node."></li> -->
+    <!-- <app-home-navifation-node [node]="cnode"></app-home-navifation-node> -->
+  </ng-container >
+</ul>
+
+
+
+
+

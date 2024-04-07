@@ -1,0 +1,8 @@
+<div class="images-container">
+<ng-container *ngFor="let data$ of datas$">
+    <div *ngIf="data$ | async as data">
+        <img class="image-item" *ngIf="isBannerComponentMedia(data.media)" [src]="prefix + data.media.url" 
+        alt="{{data.media.altText || 'Image'}}" (click)="onImageClick(data)">
+    </div>
+</ng-container>
+</div>

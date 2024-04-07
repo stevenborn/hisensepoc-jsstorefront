@@ -1,0 +1,10 @@
+.navi-ui {
+    display: flex; // 启用 Flexbox
+    list-style: none; // 去除默认的列表样式
+    padding: 0; // 去除默认的内边距
+    margin: 0; // 去除默认的外边距
+}
+
+.sub-nav{
+    display: none;
+}

@@ -1,0 +1,14 @@
+
+
+
+
+<a>
+  {{ node?.title }}
+
+<ng-container *ngIf="node?.children">
+<ng-container *ngFor="let childNode of node?.children">
+<!-- <app-home-navifation-node [node]="childNode" class="sub-nav"></app-home-navifation-node> -->
+</ng-container>
+
+</ng-container>
+</a>
