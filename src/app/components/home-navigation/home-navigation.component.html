@@ -5,11 +5,17 @@
   </li>
 </ul> -->
 
-<ng-container *ngFor="let navigationData$ of navigationNodeData$">
+<!-- <ng-container *ngFor="let navigationData$ of navigationNodeData$">
   <ng-container *ngIf="navigationData$ | async as node">
-    <app-home-navifation-node [node]="node"></app-home-navifation-node>
+    <div class="aa">
+      <app-home-navifation-node [node]="node"></app-home-navifation-node>
+    </div>
   </ng-container >
-</ng-container>
+</ng-container> -->
+
+<app-home-navifation-node [node]="node$ | async" [ngClass]="(styleClass$ | async) ?? ''" [navAriaLabel]="name$ | async">
+</app-home-navifation-node>
+
 
 
 

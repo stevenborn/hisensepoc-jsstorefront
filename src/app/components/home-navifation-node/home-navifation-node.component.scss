@@ -1,23 +1,29 @@
-.hidden {
-    display: none;
-}
+// .hidden {
+//     display: none;
+// }
 
-.title-span {
-    cursor: pointer;
-    margin-right: 40px;
-    position: relative;
-    &:hover .hidden {
-        display: block;
+// .title-span {
+//     cursor: pointer;
+//     margin-right: 40px;
+//     position: relative;
+//     &:hover .hidden {
+//         display: block;
             
-    }
+//     }
         
-}
+// }
 
 
-.title-span:hover {
-    background-color: yellow;
+// .title-span:hover {
+//     background-color: yellow;
+// }
+
+// .title-span:hover .hidden {
+//     display: block;
+// }
+
+
+.app-home-navifation-node {
+    display: flex;
 }
 
-.title-span:hover .hidden {
-    display: block;
-}
