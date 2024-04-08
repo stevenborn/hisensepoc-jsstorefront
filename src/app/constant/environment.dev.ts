@@ -1,4 +1,4 @@
 
 export const environment = {
-  prefix: 'https://localhost:9002/'
+  prefix: 'https://47.104.103.85:9002/'
 };

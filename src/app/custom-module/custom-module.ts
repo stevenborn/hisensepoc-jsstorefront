@@ -27,7 +27,7 @@ import { HomeNavifationNodeComponent } from '../components/home-navifation-node/
           component: HomeAdimgComponent
         },
         CategoryNavigationComponent: {
-          // component:HomeNavigationComponent  
+          // component:HomeNavigationComponent
         }
         }, 
     } as CmsConfig,),

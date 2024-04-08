@@ -1,14 +1,12 @@
 
 
-
-
-<a>
-  {{ node?.title }}
-
+<span *ngIf="node?.title" class="title-span">{{ node?.title }}
+<span class="arrow-down">&#x25BC;</span>
+</span>
 <ng-container *ngIf="node?.children">
 <ng-container *ngFor="let childNode of node?.children">
-<!-- <app-home-navifation-node [node]="childNode" class="sub-nav"></app-home-navifation-node> -->
+<app-home-navifation-node [node]="childNode" [depth]="depth + 1"
+[ngClass]="{'hidden': depth > 0}" ></app-home-navifation-node>
+</ng-container>
 </ng-container>
 
-</ng-container>
-</a>

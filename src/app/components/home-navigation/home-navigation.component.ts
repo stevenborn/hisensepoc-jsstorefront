@@ -23,18 +23,17 @@ export class HomeNavigationComponent implements OnInit {
   ngOnInit() {
 
     this.component.data$.subscribe(e => { 
-      // this.navigationData = e;
-      // console.log(e);
-      // console.log(e.navigationNode);
+      console.log(e);
+      
     })
 
-    this.navigationService.getNavigationNode(this.component.data$).subscribe(e => { 
+    // this.navigationService.getNavigationNode(this.component.data$).subscribe(e => { 
       // this.childrenNodes = e.children ?? [];
       // console.log(this.childrenNodes[0].title);
       
       // console.log(e);
       
-    })
+    // })
 
     this.navigationNodeData$.push(this.navigationService.getNavigationNode(this.component.data$));
   }
